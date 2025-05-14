@@ -1,0 +1,656 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Library</title>
+</head>
+
+<body class="diary-monday-page">
+    <div class="containers">
+        <div class="back">
+            <a href="home.html"><img src="ICON/BACKBUTTON.svg" alt=""></a>
+        <h1 class="h1"> Food Library</h1>
+    </div>
+
+     <div class="category-button">
+<button class="category-btn active" data-category="all">All</button>
+  <button class="category-btn" data-category="meal">Meal</button>
+  <button class="category-btn" data-category="plant">Plant Based</button>
+   <button class="category-btn" data-category="fried">Fried/Fast Food</button>
+    <button class="category-btn" data-category="snack">Sweet/Snack</button>
+     <button class="category-btn" data-category="fruit">Fruit</button>
+  <button class="category-btn" data-category="drink">Drink</button>
+    </div>
+<div class="food-container">
+    <div class="food-list">
+    <!-- mie -->
+      <div class="food-card" data-category="meal">
+  <div class="food-img">
+    <img src="IMAGES/mie.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Mie Goreng</p>
+      <p class="subtext">1 mangkuk / ±250g </p>
+    </div>
+      <div class="info-btn">
+        <a href="mie.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">20g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">10g</p>
+        </div>
+      </div>
+      </div>
+       <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+  </div>
+     <!-- Burger -->
+            <div class="food-card" data-category="fried">
+  <div class="food-img">
+    <img src="IMAGES/burger.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Burger</p>
+      <p class="subtext"> 1 buah / ±200g </p>
+    </div>
+      <div class="info-btn">
+        <a href="burger.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">14g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">6g</p>
+        </div>
+      </div>
+      </div>
+           <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+   
+  </div>
+<!-- Nasgor -->
+<div class="food-card" data-category="meal">
+  <div class="food-img">
+    <img src="IMAGES/nasgor.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+      <div class="food-name">
+        <p class="bodytext-b">Nasi Goreng</p>
+        <p class="subtext">1 piring / ±300g</p>
+      </div>
+      <div class="info-btn">
+        <a href="nasigoreng.html">
+          <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+        <div class="fat">
+          <img src="ICON/Avocado.svg">
+          <p class="subtext-b">6,2g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+          <img src="ICON/sugar.svg">
+          <p class="subtext-b">0g</p>
+        </div>
+      </div>
+    </div>
+    <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+  </div>
+</div>
+
+<!-- Katsu -->
+   <div class="food-card" data-category="meal">
+  <div class="food-img">
+    <img src="IMAGES/katsu.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Nasi Ayam Katsu</p>
+      <p class="subtext"> 1 piring / ±350g </p>
+    </div>
+      <div class="info-btn">
+    <a href="katsu.html">
+        <img src="ICON/information.svg">
+    </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">18,2g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">0g</p>
+        </div>
+      </div>
+      </div>
+       <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+    </div>
+  </div>
+<!-- GAdo -->
+  <div class="food-card" data-category="plant">
+  <div class="food-img">
+    <img src="IMAGES/gado.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Gado-Gado</p>
+      <p class="subtext"> 1 piring / ±300g </p>
+    </div>
+      <div class="info-btn">
+    <a href="gado.html">
+        <img src="ICON/information.svg">
+    </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">24g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">10g</p>
+        </div>
+      </div>
+      </div>
+             <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+    </div>
+
+<!-- Lodeh -->
+    <div class="food-card" data-category="plant">
+  <div class="food-img">
+    <img src="IMAGES/lodeh.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Sayur Lodeh</p>
+      <p class="subtext"> 1 mangkuk / ±200g </p>
+    </div>
+      <div class="info-btn">
+    <a href="lodeh.html">
+        <img src="ICON/information.svg">
+    </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">8,4g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">3g</p>
+        </div>
+      </div>
+      </div>
+       <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+  </div>
+<!-- Kangkung -->
+      <div class="food-card" data-category="plant">
+  <div class="food-img">
+    <img src="IMAGES/kangkung.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Tumis Kangkung</p>
+      <p class="subtext"> 1 piring / ±150g </p>
+    </div>
+      <div class="info-btn">
+        <a href="kangkung.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">3g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">2g</p>
+        </div>
+      </div>
+      </div>
+           <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+    </div>
+  <!-- FriedCHicken -->
+         <div class="food-card" data-category="fried">
+  <div class="food-img">
+    <img src="IMAGES/ayam.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Ayam Goreng Tepung</p>
+      <p class="subtext"> 1 potong / ±120g </p>
+    </div>
+      <div class="info-btn">
+        <a href="ayam.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">13g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">0g</p>
+        </div>
+      </div>
+      </div>
+           <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+  </div>
+  <!-- Kentang -->
+            <div class="food-card" data-category="fried">
+  <div class="food-img">
+    <img src="IMAGES/kentang.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b"> Kentang Goreng</p>
+      <p class="subtext"> 1 wadah / ±150g </p>
+    </div>
+      <div class="info-btn">
+        <a href="kentang.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">17g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">0g</p>
+        </div>
+      </div>
+      </div>
+           <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+
+  </div>
+
+
+       <!-- Es krim -->
+      <div class="food-card" data-category="snack">
+  <div class="food-img">
+    <img src="IMAGES/es.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Es Krim</p>
+      <p class="subtext"> 1 cup / ±100g </p>
+    </div>
+      <div class="info-btn">
+        <a href="es.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">11g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">14g</p>
+        </div>
+      </div>
+      </div>
+             <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+    
+  </div>
+  <!-- Coklat -->
+      <div class="food-card" data-category="snack">
+  <div class="food-img">
+    <img src="IMAGES/coklat.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Cokelat</p>
+      <p class="subtext"> 1 batang kecil / ±50g </p>
+    </div>
+      <div class="info-btn">
+        <a href="cokelat.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">15g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">25g</p>
+        </div>
+      </div>
+      </div>
+             <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+    </div>
+    <!-- Donut -->
+            <div class="food-card" data-category="snack">
+  <div class="food-img">
+    <img src="IMAGES/donut.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Donat</p>
+      <p class="subtext"> 1 buah / ±50g </p>
+    </div>
+      <div class="info-btn">
+        <img src="ICON/information.svg">
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">11g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">10g</p>
+        </div>
+      </div>
+      </div>
+     <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+    </div>
+     <!-- Kopi -->
+            <div class="food-card" data-category="drink">
+  <div class="food-img">
+    <img src="IMAGES/kopi.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Kopi Susu</p>
+      <p class="subtext"> 1 gelas / ±250ml </p>
+    </div>
+      <div class="info-btn">
+        <a href="kopi.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">7g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">18g</p>
+        </div>
+      </div>
+      </div>
+     <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+    </div>
+       <!-- cola -->
+            <div class="food-card" data-category="drink">
+  <div class="food-img">
+    <img src="IMAGES/cola.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Coca Cola</p>
+      <p class="subtext"> 1 gelas / ±250ml </p>
+    </div>
+      <div class="info-btn">
+        <a href="cola.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">0g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">26g</p>
+        </div>
+      </div>
+      </div>
+     <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+    </div>
+         <!-- Pisang -->
+     <div class="food-card" data-category="fruit">
+  <div class="food-img">
+    <img src="IMAGES/pisang.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Pisang</p>
+      <p class="subtext"> 1 buah / ±120g </p>
+    </div>
+      <div class="info-btn">
+        <a href="pisang.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">0g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">12g</p>
+        </div>
+      </div>
+      </div>
+    <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+    </div>
+  <!-- apel -->
+    <div class="food-card" data-category="fruit">
+  <div class="food-img">
+    <img src="IMAGES/apel.png">
+  </div>
+  <div class="food-details">
+    <div class="food-header">
+    <div class="food-name">
+      <p class="bodytext-b">Apel Merah</p>
+      <p class="subtext"> 1 buah / ±150g </p>
+    </div>
+      <div class="info-btn">
+        <a href="apel.html">
+        <img src="ICON/information.svg">
+        </a>
+      </div>
+    </div>
+    <div class="nutrition">
+      <div class="nutrient">
+       <div class="fat">
+        <img src="ICON/Avocado.svg">
+        <p class="subtext-b">0g</p>
+        </div>
+      </div>
+      <div class="nutrient">
+        <div class="sugar">
+        <img src="ICON/sugar.svg">
+        <p class="subtext-b">17g</p>
+        </div>
+      </div>
+      </div>
+     <div class="portion-control" style="display: none;">
+      <button class="decrement">-</button>
+      <span class="portion-count">1</span>
+      <button class="increment">+</button>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="food-done">
+  <a href="home.html"><button>Add</button></a>
+</div>
+</div>
+    <script src="category.js"> </script>
+    <script src="portion.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Goal </title>
+</head>
+
+<body class="goal-page">
+    <div class="containers">
+        <div class="back-goal">
+            <a href="home.html"><img src="ICON/BACKBUTTON.svg" alt=""></a>
+        <h1 class="h1">Goal</h1>
+        <div class="currency">
+                <img src="ICON/star.svg">
+                <p class="subtext-b">30</p>
+            </div>
+    </div>
+
+
+    <h3 class="h3">Clear missions, earn stars, unlock your wishlist!</h3>
+
+    <div class="mission-container">
+        <div class="mission-title">
+            <img src="ICON/sweets.svg"> 
+            <h3 class="h3">Keep a 3-Day Sweet-Free Streak!</h3>
+        </div>
+
+        <div class="percent-bar">
+            <div id="missionBar" class="bar-fill"></div>
+          </div>
+        
+          <div class="mission-complete">
+            <p class="subtext"> 2/3 days complete</p>
+            <div class="currency">
+                <img src="ICON/locked star.svg">
+                <p class="subtext-b">5</p>
+            </div>
+          </div>
+    </div>
+
+    <div class="wishlist">
+        <div class="wishlist-title">
+        <h1 class="h1">My Wishlist</h1>
+        <a href="add-wishlist.html">
+        <img src="ICON/add-wl.svg">
+        </a>
+        </div>
+        <h3 class="h3">Unlock your wishlist with stars!</h3>
+        <div class="list">
+            <div class="list-unlocked">
+                <div class="check-list">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span> 
+                      </label>
+                   <p class="subtext">Buy new plushie</h3>
+                    </div>
+                    <div class="currency">
+                <img src="ICON/locked star.svg">
+                <p class="subtext-b">25</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="list-locked">
+                <div class="check-list">
+               <img src="ICON/locked.svg">
+                   <p class="subtext">Checkout Xiaomi’s hairdryer</p>
+                    </div>
+                    <div class="currency">
+                <img src="ICON/star.svg">
+                <p class="subtext-b">55</p>
+            </div>
+            </div>
+        <div class="list-locked">
+                <div class="check-list">
+               <img src="ICON/locked.svg">
+                   <p class="subtext">Staycation in Jogja</p>
+                    </div>
+                    <div class="currency">
+                <img src="ICON/star.svg">
+                <p class="subtext-b">75</p>
+            </div>
+            </div>
+        </div>
+    </div>
+           
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="home.html">
+                    <div class="icon">
+                        <img src="ICON/home.svg" alt="">
+                    </div>
+                    <div class="name">Home</div>
+                </a>
+            </li>
+            <li>
+                <a href="diary.html">
+                    <div class="icon">
+                        <img src="ICON/diary.svg" alt="">
+                    </div>
+                    <div class="name">Diary</div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="goal.html">
+                    <div class="icon">
+                        <img src="ICON/goal-active.svg" alt="">
+                    </div>
+                    <div class="name">Goal</div>
+                </a>
+            </li>
+            <li>
+                <a href="buddies.html">
+                    <div class="icon">
+                        <img src="ICON/buddies.svg" alt="">
+                    </div>
+                    <div class="name">Buddies</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+          <div id="popup" class="popup">
+            <div class="popup-content">
+                <p class="bodytext-b">Sorry, this day hasn't arrived yet!</p>
+            </div>
+        </div>
+        <script src="mission.js"> </script>
+</body>
+</html>

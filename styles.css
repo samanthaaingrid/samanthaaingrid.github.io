@@ -1,0 +1,166 @@
+:root {
+    /* COLOR PALETTE */
+    --white: #FFFFFF;
+    --pink: #FFA4BC;
+    --darkpink: #FF5381;
+    --darkgreen: #026247;
+    --green: #C1FC70;
+    --verydarkgreen: #004330;
+    --lightgrey: #D9D9D9;
+    --gray: #968B8B;
+
+
+    /* FONT SIZE */
+    --heading1: 32px;
+    --heading2: 24px;
+    --heading3: 20px;
+    --body: 16px;
+    --subtext: 14px;
+    --caption: 10px;
+
+    /* MARGIN, PADDING, SPACING, AND LAYOUT */
+    --value1: 8px;
+    --value2: 16px;
+    --value3: 24px;
+    --value4: 32px;
+    --value5: 40px;
+    --value6: 48px;
+    --value7: 56px;
+    --value8: 64px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* overflow-y: hidden; */
+}
+.containers{
+    margin: 0 var(--value4);
+    text-align: center;
+    margin-top: 72px;
+}
+.h1{
+    font-size: var(--heading1);
+    color:var(--verydarkgreen);
+
+}
+.containers form {
+    margin-top: var(--value4);
+}
+
+form .field{
+    margin-bottom: var(--value2);
+}
+form .input-field{
+    position: relative;
+    height: 55px;
+    width: 100%;
+
+}
+
+.input-field input{
+    font-size: var(--subtext);
+    color: var(--verydarkgreen);
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background-color: #F6F5FA;
+    border:none;
+    border-radius: var(--value2);
+    padding: var(--value2) var(--value2);
+    border: 1px solid var(--gray);
+}
+.input-field :focus{
+    border-color: var(--darkgreen);
+}
+.input-field.invalid input {
+    border-color: red;
+}
+
+
+.error{
+    font-size: var(--caption);
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin-top: var(--value1);
+    color:red;
+    display: none;
+}
+
+.invalid .error{
+    display: flex;
+}
+
+.error img{
+    margin-right: var(--value1);
+    width: 15px;
+}
+
+.input-field.create-password {
+    position: relative;         /* Set position relative to contain the absolute positioning of the icon */
+}
+.input-field.create-password img {
+    position: absolute;         /* Position the icon absolutely */
+    right: 18px;               /* Position it on the right side */
+    top: 50%;                  /* Center it vertically */
+    transform: translateY(-50%); /* Adjust to center vertically */
+    cursor: pointer;           /* Change cursor to pointer for better UX */
+    width: 20px;               /* Set a width for the icon */
+    height: 20px;              /* Set a height for the icon */
+}
+
+.button{
+    margin-top: var(--value3);
+    text-align: center;
+}
+
+.button input{
+    font-size: var(--body);
+    font-weight: bold;
+    padding: var(--value2) var(--value4);
+    background-color: var(--darkgreen);
+    border-radius: var(--value2);
+    color:var(--white);
+    border: none;
+    width: 100%;
+
+}
+
+.option {
+    margin-top: var(--value4);
+    text-align: center;
+ 
+}
+
+.option p{
+    margin: var(--value2);
+    text-align: center;
+}
+.forgot {
+    margin-top: var(--value1);
+    color: #808080;
+    cursor: pointer;
+    text-align: left;
+  }
+  .forgot a {
+    color: #808080;
+    text-decoration: none; 
+}
+.option p span{
+    color: var(--darkpink);
+    font-weight: bold;
+}
+.caption a {
+    text-decoration: none;
+}

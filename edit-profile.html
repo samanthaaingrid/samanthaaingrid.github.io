@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Edit Profile</title>
+</head>
+
+<body>
+    
+    <div class="edit-containers">
+        <div class="back">
+            <a href="profile.html"><img src="ICON/BACKBUTTON.svg" alt=""></a>
+        <h1 class="h1">Edit Profile</h1>
+    </div>
+<div class="edit-info">
+    <img src="icon/profile.svg">
+
+    <form id="form" action="#">
+    <div class="editing">
+        <p class="subtext-b">Name</p>
+        <div class="edit-field">
+            <input type="text" id="age" name="name" placeholder="Name" required>
+        </div>
+
+        <p class="subtext-b">Email</p>
+        <div class="email-field">
+            <div class="input-field">
+                <input type="text" placeholder="Email Address" class="email">
+            </div>
+            <span class="error email error" style="display: none;">
+                <img src="ICON/error.svg" alt="Error icon" />
+                <p class="error-text">Please enter a valid email, for example: name@email.com.</p>
+            </span>
+        </div>
+
+        <p class="subtext-b">Password</p>
+        <div class="pass-field">
+            <div class="input-field create-password">
+                <input type="password" placeholder="Create Password" class="password">
+                <img src="ICON/hide.svg" alt="Toggle visibility icon" class="hidepass" id="toggle-password"/>
+            </div>
+            <span class="error password error" style="display: none;">
+                <img src="ICON/error.svg" alt="Error icon" />
+                <p class="error-text">Password must be at least 8 characters long.<br>Please try again</p>
+            </span>
+        </div>
+        <div class="edit-done">
+            <button type="submit">Done</button>
+        </div>
+    </div>
+</form>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

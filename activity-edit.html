@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="activity">
+        <div class="content">
+            <h1 class="h1">How active are you <br> every day?</h1>
+            <br>
+           
+        </div>
+
+        <div class="activity-level">
+            <button onclick="setActive(this)">
+              <p class="subtext-b">Sedentary</p>
+              <p class="subtext">Mostly sit, little to no exercise</p>
+            </button>
+        
+            <button onclick="setActive(this)">
+              <p class="subtext-b">Lightly active</p>
+              <p class="subtext">Light exercise 1–3 days a week</p>
+            </button>
+
+            <button onclick="setActive(this)">
+                <p class="subtext-b">Moderately Active</p>
+                <p class="subtext">Exercise 3-5 days a week</p>
+              </button>
+
+              <button onclick="setActive(this)">
+                <p class="subtext-b">Very Active</p>
+                <p class="subtext">Exercise almost every day</p>
+              </button>
+
+              <button onclick="setActive(this)">
+                <p class="subtext-b">Super Active</p>
+                <p class="subtext">Physical Lifestyle</p>
+              </button>
+          </div>
+
+           <div class="btn">
+            <a href="height-edit.html"> <img src="ICON/BACKBUTTON.svg"> </a>
+          <button class="bodytext-b"  id="resultBtn" disabled> See my result!</button>
+    </div>
+    </div>
+    <script src="select-activity-edit.js"></script>
+</body>
+
+</html>

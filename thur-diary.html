@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Diary</title>
+</head>
+
+<body class="diary-monday-page">
+    <div class="containers">
+        <div class="back">
+            <a href="home.html"><img src="ICON/BACKBUTTON.svg" alt=""></a>
+        <h1 class="h1">Diary</h1>
+    </div>
+
+    <h3 class="h3">Pick a date to look back. How healthy was that day?</h3>
+    <div class="week">
+    <a href="diary.html">
+      <div class="d-day">
+        <div class="day">M</div>
+        <div class="date">3</div>
+      </div>
+          </a>
+     <a href="tue-diary.html">
+      <div class="d-day">
+        <div class="day">T</div>
+        <div class="date">4</div>
+      </div>
+      </a>
+
+      <a href="wed-diary.html">
+      <div class="d-day">
+        <div class="day">W</div>
+        <div class="date">5</div>
+      </div>
+      </a>
+
+      <a href="thur-diary.html">
+      <div class="d-day active">
+        <div class="day">T</div>
+        <div class="date">6</div>
+      </div>  
+    </a>
+      
+      <div class="d-day unavail">
+        <div class="day">F</div>
+        <div class="date">7</div>
+      </div>
+      <div class="d-day unavail">
+        <div class="day">S</div>
+        <div class="date">8</div>
+      </div>
+      <div class="d-day unavail">
+        <div class="day">S</div>
+        <div class="date">9</div>
+      </div>
+    </div>
+
+
+     <div class="about">
+<a href="about-thur.html">
+        <img src="ICON/about.svg">
+        </a>
+    </div>
+
+      <div class="progress">
+  <div class="progressbar" data-percent1="45" data-percent2="30">
+    <canvas id="progressCanvas"></canvas>
+  </div>
+</div>
+
+    <div class="container-reflection">
+   <div class="reflection-food-grid">
+    <div class="food-item">
+        <img src="ICON/carrot.svg">
+        <div class="food-count">
+            <p class="bodytext-b">Plant-Based</p>
+            <h2 class="h2">2</h2>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="ICON/fruit.svg">
+        <div class="food-count">
+            <p class="bodytext-b">Fruit</p>
+            <h2 class="h2">3</h2>
+        </div>
+    </div>
+
+    <!-- <div class="food-item">
+        <img src="ICON/sugardrink.svg">
+        <div class="food-count">
+            <p class="bodytext-b">Sugary Drink</p>
+            <h2 class="h2">1</h2>
+        </div>
+    </div> -->
+</div>
+                    
+<div class="risk">
+                    <div class="risk-title">
+                            <img src="icon/about.svg">
+                            <p class="bodytext-b">Daily Reflection</p>
+                        </div>
+                    <div class="info-risk">
+                        <p class="subtext">Yay! You picked veggies and fruit today! Your body loves the good stuff. More energy, better mood, and you're one step closer to feeling your best. Keep it up, you're crushing it!</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+      <div class="navbar">
+        <ul>
+            <li>
+                <a href="home.html">
+                    <div class="icon">
+                        <img src="ICON/home.svg" alt="">
+                    </div>
+                    <div class="name">Home</div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="diary.html">
+                    <div class="icon">
+                        <img src="ICON/diary-active.svg" alt="">
+                    </div>
+                    <div class="name">Diary</div>
+                </a>
+            </li>
+            <li>
+                <a href="goal.html">
+                    <div class="icon">
+                        <img src="ICON/goal.svg" alt="">
+                    </div>
+                    <div class="name">Goal</div>
+                </a>
+            </li>
+            <li>
+                <a href="buddies.html">
+                    <div class="icon">
+                        <img src="ICON/buddies.svg" alt="">
+                    </div>
+                    <div class="name">Buddies</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+          <div id="popup" class="popup">
+            <div class="popup-content">
+                <p class="bodytext-b">Sorry, this day hasn't arrived yet!</p>
+            </div>
+        </div>
+
+    <script src="popup.js"> </script>
+    <script src="progresswed.js"></script>
+    <script src="diary.js"></script>
+</body>
+
+</html>

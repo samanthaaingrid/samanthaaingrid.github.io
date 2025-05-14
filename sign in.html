@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="containers">
+        <h1 class="h1m">Sign In</h1>
+
+        <form action = "#">
+            <div class="field email-field">
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" class="email">
+                </div>
+                <span class="error email error" style="display: none;">
+                    <img src="ICON/error.svg" alt="Error icon" />
+                    <p class="error-text">Please enter a valid email, for example: name@email.com.</p>
+                </span>
+            </div>
+        
+            <div class="field">
+                <div class="input-field create-password">
+                    <input type="password" placeholder="Create Password" class="password">
+                    <img src="ICON/hide.svg" alt="Toggle visibility icon" class="hidepass" id="toggle-password"/>
+                </div>
+                <span class="error password error" style="display: none;">
+                    <img src="ICON/error.svg" alt="Error icon" />
+                    <p class="error-text">Password must be at least 8 characters long. <br>Please try again</p>
+                </span>
+            </div>
+
+            <div class="button">
+                <a href="whatsapp.html"><input type="submit" value="Sign in" /></a>
+            </div>
+        </form>
+        <div class="option">
+           
+            <p class="caption"> Or sign in with </p>
+            <div class="socialmedia">
+                <a href="apple-login-url.html"><img src="ICON/Apple.svg"></a>
+                <a href="google-login-url.html"><img src="ICON/google.svg" ></a>
+            </div>
+
+            <p class="caption"> Don't have an account?
+                <a href="signup.html"><span>Sign up</span></a>
+            </p>
+        </div>
+    </div>
+
+    <script src = "script1.js"></script>
+</body>
+</html>

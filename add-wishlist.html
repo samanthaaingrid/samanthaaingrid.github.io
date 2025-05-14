@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>WIshlist</title>
+</head>
+
+<body>
+    <div class="wishlist-container">
+        <div class="back">
+            <a href="goal.html"><img src="ICON/BACKBUTTON.svg" alt=""></a>
+            <h1 class="h1">My Wishlist</h1>
+        </div>
+        <h3 class="h3">Add your wish. We’ll turn it into a challenge worth completing.</h3>
+
+        <div class="add-container">
+            <h3 class="h3">Wishlist</h3>
+            <form id="form" action="#">
+                <div class="wishlist-field">
+                    <textarea id="wishlist" name="wishlist" placeholder="Enter your reward (e.g., a cute tumbler or that book you've been wanting)" required></textarea>
+                </div>
+            </form>
+
+            <h3 class="h3">Wish Level</h3>
+            <div class="difficulty">
+                <button onclick="setActive(this)">
+                    <p class="subtext-b"> Small </p>
+                </button>
+
+                <button onclick="setActive(this)">
+                    <p class="subtext-b"> Medium</p>
+                </button>
+
+                <button onclick="setActive(this)">
+                    <p class="subtext-b"> Big </p>
+                </button>
+            </div>
+        </div>
+
+        <div class="wishlist-done">
+            <a href="goal.html"><button>Done</button></a>
+        </div>
+    </div>
+
+    <script src="wish-level.js"></script>
+</body>
+
+</html>

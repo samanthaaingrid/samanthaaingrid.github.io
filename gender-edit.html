@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <div class="container">
+    <h1 class="h1s">What is your gender?</h1>
+
+    <div class="dropdown">
+      <div class="dropdown-inner">
+        <button onclick="toggleDropdown()" class="dropdown-btn" id="dropdownBtn">Gender</button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="#" onclick="selectGender(event, 'Male')">Male</a>
+          <a href="#" onclick="selectGender(event, 'Female')">Female</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="backbtn">
+      <a href="age-edit.html"><img src="ICON/BACKBUTTON.svg" alt="Back"></a>
+      <img src="ICON/PROGRESS2.svg" alt="Progress">
+      <a href="weight-edit.html"><img src="ICON/NEXTBUTTON.svg" alt="Next"></a>
+    </div>
+  </div>
+
+    <script src="dropdown .js" defer></script>
+
+</body>
+</html>
