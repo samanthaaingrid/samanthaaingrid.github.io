@@ -6,6 +6,7 @@
     --green: #C1FC70;
     --verydarkgreen: #004330;
     --lightgrey: #D9D9D9;
+    --orange:#FFBF46;
 
     /* FONT SIZE */
     --heading1: 32px;
@@ -1374,6 +1375,7 @@ text{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 .welcome-home h1{
     padding:0;
@@ -1674,6 +1676,9 @@ padding:var(--value1);
   align-items: center;
 
 }
+.h3{
+    color: var(--verydarkgreen);
+}
 .food-card-home:hover {
   opacity: 0.85;
   transform: scale(1.01);
@@ -1688,3 +1693,17 @@ padding:var(--value1);
 .food-list a {
     text-decoration: none;
 }
+.food-info-high{    
+    margin-top:var(--value3);
+    background-color: var(--pink);
+    padding: var(--value2);
+    border-radius: var(--value2);
+    color: var(--verydarkgreen);
+  }
+.food-info-med{    
+    margin-top:var(--value3);
+    background-color: var(--orange);
+    padding: var(--value2);
+    border-radius: var(--value2);
+    color: var(--verydarkgreen);
+  }
