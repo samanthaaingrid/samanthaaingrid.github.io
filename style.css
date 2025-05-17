@@ -730,6 +730,7 @@ body {
 }
 .diary-monday-page{
     overflow-y: scroll !important;
+    overflow-x: hidden;
 }
 .week a{
     text-decoration: none;
