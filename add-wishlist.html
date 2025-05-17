@@ -11,22 +11,24 @@
 </head>
 
 <body>
-    <div class="wishlist-container">
+     <div class="wishlist-container-fix">
+     <header class="fixed-header">
         <div class="back">
             <a href="goal.html"><img src="ICON/BACKBUTTON.svg" alt=""></a>
             <h1 class="h1">My Wishlist</h1>
         </div>
+    </header>
         <h3 class="h3">Add your wish. We’ll turn it into a challenge worth completing.</h3>
 
         <div class="add-container">
-            <h3 class="h3">Wishlist</h3>
+            <p class="bodytext-b">Wishlist</p>
             <form id="form" action="#">
                 <div class="wishlist-field">
                     <textarea id="wishlist" name="wishlist" placeholder="Enter your reward (e.g., a cute tumbler or that book you've been wanting)" required></textarea>
                 </div>
             </form>
 
-            <h3 class="h3">Choose Challenge Level</h3>
+            <p class="bodytext-b">Choose Challenge Level</p>
             <div class="difficulty">
                 <button onclick="setActive(this)">
                     <p class="subtext-b"> Small </p>
