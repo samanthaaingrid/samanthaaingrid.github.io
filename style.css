@@ -232,7 +232,7 @@ body {
     display: none;
     justify-content: center;
     text-align: left;
-    background-color: var(--darkgreen);
+    background-color: var(--green);
     border-radius: var(--value2);
     margin-top: var(--value1);
     z-index: 1;
@@ -240,9 +240,8 @@ body {
     width:100%;
 
 }
-
 .dropdown-content a {
-    color: var(--white);
+    color: var(--verydarkgreen);
     padding: var(--value2);
     font-size: var(--subtext);
     text-decoration: none;
@@ -398,14 +397,7 @@ body {
 .containers{
     padding: var(--value4);
 }
-.back {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: var(--value4);
-}
+
 .back-age{
     position: absolute;
     left: var(--value4);
@@ -423,6 +415,12 @@ body {
 .foto img{
     width: 100%;
     border-radius: var(--value2);
+}
+
+.foto-besar img{
+    width: 100%;
+    border-radius: var(--value2);
+    margin-top: var(--value5);
 }
 .bar{
     margin-top: var(--value2);
@@ -463,6 +461,7 @@ body {
   }
   .food-info{
     margin-top:var(--value3);
+    margin-bottom: var(--value4);
     background-color: var(--green);
     padding: var(--value2);
     border-radius: var(--value2);
@@ -483,6 +482,11 @@ body {
 .back-buddies{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.back-buddies img{
+    width: var(--value5);
 }
 .pp-name{
     display: flex;
@@ -586,7 +590,8 @@ body {
     font-weight: normal;
 }
 .friends{
-    margin: var(--value4) 0  ;
+    margin-top:var(--value3) ;
+    margin-bottom: 80px;
 }
 .friend-1{
     display: flex;
@@ -608,14 +613,13 @@ body {
   
 .friend-1 button {
     display: block;
-    padding: var(--value1) var(--value2);
     border-radius: var(--value1);
     font-size: var(--subtext);
     font-weight: bold;
     background-color: var(--white);
     border: none;
     color: var(--verydarkgreen);
-    width: fit-content;
+    width:min-content;
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -642,6 +646,7 @@ body {
 .friend-2  span{
     font-weight: normal;
 }
+
 .click2, .click1 {
     padding: var(--value1)var(--value2);
     border-radius: var(--value1);
@@ -650,8 +655,9 @@ body {
     background-color: var(--white);
     border: none;
     color: var(--verydarkgreen);
-    width: fit-content;
+    min-width: 80px;
     cursor: pointer;
+    text-align: center;
 }
 
 .click2.nudged, .click1.praised {
@@ -700,6 +706,10 @@ body {
     font-weight: bold;
   }
   .about{
+    margin-top: var(--value3);
+    text-align: right;
+  }
+   .about-diary{
     margin-top: var(--value2);
     text-align: right;
   }
@@ -756,7 +766,7 @@ body {
     flex-direction: column;
     gap: var(--value2);
     margin-top: var(--value2);
-    margin-bottom: var(--value6);
+    margin-bottom: 80px;
 }
 .reflection-food-grid {
     display: grid;
@@ -849,7 +859,12 @@ body {
 .back-goal{
     display: flex;
     justify-content: space-between;
-    margin-bottom:var(--value3);
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.back-goal img{
+    width: var(--value5);
 }
 .mission-container{
     background-color: var(--green);
@@ -859,6 +874,35 @@ body {
     flex-direction: column;
     color: var(--verydarkgreen);
     margin-top: var(--value3);
+}
+.mission-container-home{
+    background-color: var(--green);
+    padding: var(--value2);
+    border-radius: var(--value2);
+    display: flex;
+    flex-direction: row;
+    color: var(--verydarkgreen);
+    margin: 0 var(--value4);
+    align-items: center;
+    justify-content: space-between;
+
+}
+.mission-title-home{
+    display: flex;
+    gap: var(--value2);    
+    align-items: center;
+    margin-right: var(--value2);
+
+}
+.mission-title-home img{
+    width: var(--value3);
+    height: var(--value3);
+}
+.mission-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
 }
 .mission-title{
     display: flex;
@@ -882,6 +926,9 @@ body {
     gap: 4px;
     align-items: center;
 }
+.currency img{
+    width: var(--value2);
+}
 .mission-complete{
     margin-top: var(--value1);
     display: flex;
@@ -890,7 +937,7 @@ body {
 }
 .wishlist{
     margin-top: var(--value4);
-    margin-bottom: var(--value6);
+    margin-bottom:80;
 
 }
 .wishlist-title{
@@ -970,21 +1017,24 @@ body {
   margin-top: var(--value2);
 }
 /* Add wishlist */
-.wishlist-container h3{
+.add-container h3{
+    font-weight: bold;
+}
+.wishlist-container-fix h3{
     font-weight: normal;
 }
-.wishlist-container{
-    padding: var(--value4);
+.wishlist-container-fix{
+    padding-top: 102px;
+    padding-left: var(--value4);
+    padding-right: var(--value4);
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-}
-.add-container h3{
-    font-weight: bold;
+    padding-bottom: var(--value4);
 }
 .add-container{
-    margin-top: var(--value4);
+    margin-top: var(--value2);
     background-color: var(--green);
     padding: var(--value2);
     border-radius: var(--value2);
@@ -1052,7 +1102,7 @@ body {
 }
 
 .profile-info{
-    margin-top: var(--value4);
+    margin-bottom: var(--value4);
     display: block;
     background-color: var(--darkgreen);
     text-align: center;
@@ -1073,6 +1123,9 @@ body {
 .name-edit img{
     width: 12px;
     height:12px;
+}
+.icon-setting img{
+    width: var(--value4);
 }
 .follow{
     margin-top:var(--value1);
@@ -1377,15 +1430,18 @@ text{
     align-items: center;
     flex-direction: row;
 }
-.welcome-home h1{
-    padding:0;
+.logo-home{
+    width: var(--value4);
 }
-
+.welcome-home img{
+    width: var(--value5);
+}
 .summary{
-    margin: var(--value3) 0;
+    margin-top: var(--value2);
+    margin-bottom: var(--value3);
     display: block;
     text-align: left;
-    background-color: var(--green);
+    background-color: var(--pink);
     padding: var(--value2);
     border-radius: var(--value2);
 }
@@ -1463,7 +1519,8 @@ text{
     width: var(--value5);
 }
 .meal-day{
-    margin-bottom: var(--value6) ;
+    margin-bottom: 160px ;
+
 }
 .meal-day h1{
     padding:0;
@@ -1475,6 +1532,7 @@ text{
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    margin-bottom: var(--value1);
 
 }
 .food-container{
@@ -1483,12 +1541,61 @@ text{
     flex-direction: column;
     height:63vh;;
 }
+.search-content{
+    margin-bottom: var(--value3);
+}
+.search {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    margin-left: var(--value4);
+    margin-right: var(--value4);
+}
+
+.search input {
+    max-width: 800px;
+    width: 100%;
+    background-color: #F6F5FA;
+    margin-top: 0px;
+    padding: var(--value1);
+    padding-left: var(--value2);
+    padding-right: var(--value2);
+    font-size: var(--caption);
+    outline: none;
+    border: 1px solid #968B8B; 
+    border-radius: var(--value1); 
+    z-index: 1;
+}
+
+.search input:focus{
+    border-color: var(--darkgreen);
+}
+.search .error {
+    display: none;
+    color: var(--red);
+    font-size: var(--subtext);
+    margin-top: var(--value1);
+}
+
+.search .error-text {
+    display: inline;
+}
+.food-container-lib{
+    overflow-y:auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--value4);
+    height:63vh;;
+    padding: 0 var(--value4);
+}
 .category-button {
     display: block;
     margin: auto;
     overflow: auto;
     white-space: nowrap;
-    padding-left: var(--value2);
+    padding-left: var(--value4);
     padding-right: var(--value1);
     margin-top: 0px;
     padding-top: 0px;
@@ -1652,21 +1759,23 @@ padding:var(--value1);
 }
 .h1-katsu{
     text-align: left;
-    margin-left: var(--value6);
+    margin-left: var(--value8);
     color: var(--verydarkgreen);
 }
 .meal-title a{
     text-decoration: none;
 }
-.food-home-container{
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    gap: var(--value2);
+.food-home-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: var(--value2);
+  width: 100%;
+  margin-left: var(--value4);
 }
 
+
 .food-card-home{
-margin-top: var(--value2);
 padding:var(--value1);
   display: flex;
   background-color: var(--green); 
@@ -1681,11 +1790,9 @@ padding:var(--value1);
 }
 .food-card-home:hover {
   opacity: 0.85;
-  transform: scale(1.01);
 }
 .food-card:hover {
   opacity: 0.85;
-  transform: scale(1.01);
 }
 .food-home-container a{
     text-decoration: none;
@@ -1693,8 +1800,16 @@ padding:var(--value1);
 .food-list a {
     text-decoration: none;
 }
+.food-list a {
+    text-decoration: none;
+}
+.food-list-see, .food-list-see a {
+    padding: 0 var(--value4);
+    text-decoration: none;
+}
 .food-info-high{    
     margin-top:var(--value3);
+    margin-bottom: var(--value4);
     background-color: var(--pink);
     padding: var(--value2);
     border-radius: var(--value2);
@@ -1702,8 +1817,61 @@ padding:var(--value1);
   }
 .food-info-med{    
     margin-top:var(--value3);
+    margin-bottom: var(--value4);
     background-color: var(--orange);
     padding: var(--value2);
     border-radius: var(--value2);
     color: var(--verydarkgreen);
   }
+ .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white); 
+    border-radius: 0 0 var(--value2) var(--value2) ;
+    z-index: 1000;
+    padding: var(--value2) var(--value4);
+    gap: 12px;
+    box-shadow: 0 2px 6px rgba(5, 56, 27, 0.3);
+}
+.back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.back img{
+    width: var(--value5);
+}
+.container-fix {
+    padding-top: 102px;
+    padding-left: var(--value4);
+    padding-right: var(--value4);
+}
+.container-fix h3{
+    font-weight: normal;
+}
+.container-fix-home {
+    padding-top: 104px;
+}
+.container-fix-food {
+    padding-top: 104px;
+    padding-right: var(--value4);
+    padding-left: var(--value4);
+}
+.reminder{
+    margin-bottom: var(--value2);
+    display: flex;
+    flex-direction: column;
+
+}
+.reminder, .about, .meal-title{
+    padding: 0 var(--value4);
+}
+.summary{
+    margin-left: var(--value4);
+    margin-right: var(--value4);
+}
+
