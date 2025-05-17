@@ -11,12 +11,22 @@
 </head>
 
 <body class="diary-monday-page">
-    <div class="containers">
+     <div class="container-fix-home">
+      <header class="fixed-header">
         <div class="back">
             <a href="home.html"><img src="ICON/BACKBUTTON.svg" alt=""></a>
         <h1 class="h1"> Food Library</h1>
     </div>
+</header>
+<div class="search-content">
+ <form id="form" action="#">
+                <div class="search">
+                    <input type="text" id="fname" name="fname" placeholder="What do you want to search for today?">
+                </div>
 
+            </form>
+        </div>
+</div>
      <div class="category-button">
 <button class="category-btn active" data-category="all">All</button>
   <button class="category-btn" data-category="meal">Meal</button>
@@ -26,7 +36,7 @@
      <button class="category-btn" data-category="fruit">Fruit</button>
   <button class="category-btn" data-category="drink">Drink</button>
     </div>
-<div class="food-container">
+<div class="food-container-lib">
     <div class="food-list">
     <!-- mie -->
       <div class="food-card" data-category="meal">
